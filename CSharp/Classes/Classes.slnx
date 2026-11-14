@@ -1,3 +1,8 @@
 <Solution>
   <Project Path="Banking/Banking.csproj" />
+  <Folder Name="/Practice/">
+    <Project Path="Products/Products.csproj" />
+    <Project Path="Rectangle/Rectangle.csproj" />
+    <Project Path="LapTimer/LapTimer.csproj" />
+  </Folder>
 </Solution>

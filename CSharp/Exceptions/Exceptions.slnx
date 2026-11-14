@@ -1,3 +1,8 @@
 <Solution>
   <Project Path="Debugging/Debugging.csproj" />
+  <Folder Name="/Practice/">
+    <Project Path="MaxSearch/MaxSearch.csproj" />
+    <Project Path="FractionCalculator/FractionCalculator.csproj" />
+    <Project Path="ConsoleMenu/ConsoleMenu.csproj" />
+  </Folder>
 </Solution>

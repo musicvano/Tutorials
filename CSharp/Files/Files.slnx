@@ -1,3 +1,8 @@
 <Solution>
   <Project Path="FilesDemo/FilesDemo.csproj" />
+  <Folder Name="/Practice/">
+    <Project Path="DirectoryReport/DirectoryReport.csproj" />
+    <Project Path="HighScores/HighScores.csproj" />
+    <Project Path="AppSettings/AppSettings.csproj" />
+  </Folder>
 </Solution>

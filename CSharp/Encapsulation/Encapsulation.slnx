@@ -1,4 +1,10 @@
 <Solution>
   <Project Path="Bank.Core/Bank.Core.csproj" />
   <Project Path="Bank.App/Bank.App.csproj" />
+  <Folder Name="/Practice/">
+    <Project Path="Temperature/Temperature.csproj" />
+    <Project Path="Student/Student.csproj" />
+    <Project Path="Common.Input/Common.Input.csproj" />
+    <Project Path="Survey.App/Survey.App.csproj" />
+  </Folder>
 </Solution>

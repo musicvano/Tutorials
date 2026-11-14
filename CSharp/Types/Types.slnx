@@ -1,3 +1,8 @@
 <Solution>
   <Project Path="Types/Types.csproj" />
+  <Folder Name="/Practice/">
+    <Project Path="SpeedUnits/SpeedUnits.csproj" />
+    <Project Path="TaxiFare/TaxiFare.csproj" />
+    <Project Path="BitAnalysis/BitAnalysis.csproj" />
+  </Folder>
 </Solution>

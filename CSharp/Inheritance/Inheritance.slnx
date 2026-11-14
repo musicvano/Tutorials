@@ -1,3 +1,8 @@
 <Solution>
   <Project Path="Payroll/Payroll.csproj" />
+  <Folder Name="/Practice/">
+    <Project Path="Animals/Animals.csproj" />
+    <Project Path="OverrideHiding/OverrideHiding.csproj" />
+    <Project Path="Messages/Messages.csproj" />
+  </Folder>
 </Solution>

@@ -1,3 +1,8 @@
 <Solution>
   <Project Path="Operators/Operators.csproj" />
+  <Folder Name="/Practice/">
+    <Project Path="PlaneVector/PlaneVector.csproj" />
+    <Project Path="Polynomial/Polynomial.csproj" />
+    <Project Path="IntExtensions/IntExtensions.csproj" />
+  </Folder>
 </Solution>

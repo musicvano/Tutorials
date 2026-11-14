@@ -3,4 +3,9 @@
   <Project Path="Receipt/Receipt.csproj" />
   <Project Path="Temperature/Temperature.csproj" />
   <Project Path="Travel/Travel.csproj" />
+  <Folder Name="/Practice/">
+    <Project Path="Greeting/Greeting.csproj" />
+    <Project Path="Rectangle/Rectangle.csproj" />
+    <Project Path="AppInfo/AppInfo.csproj" />
+  </Folder>
 </Solution>

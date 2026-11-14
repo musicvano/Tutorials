@@ -1,3 +1,8 @@
 <Solution>
   <Project Path="Patterns/Patterns.csproj" />
+  <Folder Name="/Practice/">
+    <Project Path="LiskovFix/LiskovFix.csproj" />
+    <Project Path="ExchangeAdapter/ExchangeAdapter.csproj" />
+    <Project Path="UndoRedo/UndoRedo.csproj" />
+  </Folder>
 </Solution>
