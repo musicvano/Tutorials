@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Downloads/Downloads.csproj" />
+  <Project Path="HashCancel/HashCancel.csproj" />
+  <Project Path="StateMachine/StateMachine.csproj" />
+  <Project Path="Statistics/Statistics.csproj" />
+</Solution>

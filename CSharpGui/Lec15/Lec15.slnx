@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="CompassLevel/CompassLevel.csproj" />
+  <Project Path="HabitTracker/HabitTracker.csproj" />
+  <Project Path="Notes/Notes.csproj" />
+  <Project Path="PhotoDiary/PhotoDiary.csproj" />
+  <Project Path="WaterTracker/WaterTracker.csproj" />
+  <Project Path="WhereAmI/WhereAmI.csproj" />
+</Solution>

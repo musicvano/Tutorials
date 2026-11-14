@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Censor/Censor.csproj" />
+  <Project Path="Contacts.Core/Contacts.Core.csproj" />
+  <Project Path="Contacts.Tests/Contacts.Tests.csproj" />
+  <Project Path="Regexes/Regexes.csproj" />
+</Solution>

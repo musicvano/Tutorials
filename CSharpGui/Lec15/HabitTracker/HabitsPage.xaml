@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Habits"
+             x:Class="Habits.HabitsPage"
+             x:DataType="local:HabitsViewModel"
+             Title="Habits">
+    <Grid RowDefinitions="Auto,*" ColumnDefinitions="*,Auto"
+          Padding="16" RowSpacing="12" ColumnSpacing="8">
+        <Entry Placeholder="New habit" Text="{Binding NewName}"
+               ReturnCommand="{Binding AddCommand}" />
+        <Button Grid.Column="1" Text="Add"
+                Command="{Binding AddCommand}" />
+
+        <CollectionView Grid.Row="1" Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Rows}">
+            <CollectionView.EmptyView>
+                <Label Text="Add your first habit" />
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="local:HabitRow">
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Delete"
+                                    BackgroundColor="LightGray"
+                                  Command="{Binding DeleteCommand,
+                                    Source={RelativeSource
+                                    AncestorType={x:Type
+                                    local:HabitsViewModel}},
+                                    x:DataType=local:HabitsViewModel}"
+                                    CommandParameter="{Binding .}" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <Grid ColumnDefinitions="*,Auto" Padding="8">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Name}"
+                                       FontSize="18" />
+                                <Label Text="{Binding StreakText}"
+                                       FontSize="12" />
+                            </VerticalStackLayout>
+                            <Button Grid.Column="1"
+                                Text="{Binding ButtonText}"
+                                Command="{Binding ToggleCommand,
+                                    Source={RelativeSource
+                                    AncestorType={x:Type
+                                    local:HabitsViewModel}},
+                                    x:DataType=local:HabitsViewModel}"
+                                CommandParameter="{Binding .}" />
+                        </Grid>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

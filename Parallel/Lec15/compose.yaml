@@ -1,0 +1,19 @@
+# The broker of the lecture: the same as
+#   docker run -d --name rabbit --hostname rabbit -p 5672:5672 -p 15672:15672 `
+#       -v rabbit-data:/var/lib/rabbitmq rabbitmq:4-management
+# Start with `docker compose up -d`, stop with `docker compose stop`.
+# The volume keeps the name rabbit-data, so both ways share the broker data.
+name: lec15
+services:
+  rabbit:
+    image: rabbitmq:4-management
+    container_name: rabbit
+    hostname: rabbit
+    ports:
+      - "5672:5672"      # AMQP 0-9-1
+      - "15672:15672"    # management UI http://localhost:15672
+    volumes:
+      - rabbit-data:/var/lib/rabbitmq
+volumes:
+  rabbit-data:
+    name: rabbit-data

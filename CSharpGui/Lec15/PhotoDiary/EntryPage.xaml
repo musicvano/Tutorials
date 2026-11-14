@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PhotoDiary"
+             x:Class="PhotoDiary.EntryPage"
+             x:DataType="local:EntryViewModel"
+             Title="Entry">
+    <Grid RowDefinitions="*,Auto,Auto" ColumnDefinitions="*,*"
+          Padding="16" RowSpacing="12" ColumnSpacing="12">
+        <Image Grid.ColumnSpan="2" Source="{Binding PhotoPath}"
+               Aspect="AspectFit" />
+        <Entry Grid.Row="1" Grid.ColumnSpan="2"
+               Placeholder="Caption" Text="{Binding Caption}" />
+        <Button Grid.Row="2" Text="Save"
+                Command="{Binding SaveCommand}" />
+        <Button Grid.Row="2" Grid.Column="1" Text="Delete"
+                Command="{Binding DeleteCommand}" />
+    </Grid>
+</ContentPage>

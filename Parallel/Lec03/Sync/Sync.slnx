@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Visitors/Visitors.csproj" />
+  <Project Path="Deadlock/Deadlock.csproj" />
+  <Project Path="BoundedBuffer/BoundedBuffer.csproj" />
+  <Project Path="Parking/Parking.csproj" />
+</Solution>

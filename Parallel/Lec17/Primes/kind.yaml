@@ -1,0 +1,11 @@
+# Кластер kind: вузол площини керування і 2 робочі вузли.
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: pro16
+nodes:
+  - role: control-plane
+    extraPortMappings:           # NodePort -> localhost
+      - { containerPort: 30080, hostPort: 30080 }
+      - { containerPort: 30081, hostPort: 30081 }
+  - role: worker
+  - role: worker

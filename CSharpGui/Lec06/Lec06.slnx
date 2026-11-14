@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ConfigDemo/ConfigDemo.csproj" />
+  <Project Path="Notifications/Notifications.csproj" />
+  <Project Path="TodoApp/TodoApp.csproj" />
+  <Project Path="WeatherMonitor/WeatherMonitor.csproj" />
+</Solution>

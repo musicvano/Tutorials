@@ -1,0 +1,56 @@
+name: pro16                  # префікс імен контейнерів і мереж
+
+services:
+  rabbitmq:
+    image: rabbitmq:4-management
+    environment:             # guest працює лише з localhost
+      RABBITMQ_DEFAULT_USER: primes
+      RABBITMQ_DEFAULT_PASS: ${RABBIT_PASSWORD:-change-me}
+    ports: ["15672:15672"]   # вебконсоль керування
+    volumes: [rabbitmq-data:/var/lib/rabbitmq]
+    networks: [backend]
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  redis:
+    image: redis:8.8
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes: [redis-data:/data]
+    networks: [backend]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 12
+
+  api:
+    build: ./Primes.Api
+    image: pro16/api:1.0
+    ports: ["8080:8080"]
+    environment: &connections
+      ConnectionStrings__rabbitmq: >-
+        amqp://primes:${RABBIT_PASSWORD:-change-me}@rabbitmq:5672
+      ConnectionStrings__redis: redis:6379
+    depends_on:
+      rabbitmq: { condition: service_healthy }
+      redis: { condition: service_healthy }
+    networks: [backend]
+
+  worker:
+    build: ./Primes.Worker
+    image: pro16/worker:1.0
+    environment: *connections
+    depends_on:
+      rabbitmq: { condition: service_healthy }
+      redis: { condition: service_healthy }
+    networks: [backend]
+    stop_grace_period: 30s   # час на завершення після SIGTERM
+
+networks:
+  backend: {}
+
+volumes:
+  rabbitmq-data: {}
+  redis-data: {}

@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Hello/Hello.vcxproj" Id="8021a6ae-54bd-45b4-9fdb-203dbd064110" />
+  <Project Path="HelloModules/HelloModules.vcxproj" Id="f5579657-d948-4c24-a784-130385c00f2e" />
+  <Project Path="Card/Card.vcxproj" Id="cef612d5-19f5-4bb9-9123-beccad7b5ca6" />
+  <Project Path="Room/Room.vcxproj" Id="153a7a6c-444f-4fc8-850a-aee3520ba85a" />
+</Solution>

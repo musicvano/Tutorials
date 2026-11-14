@@ -1,0 +1,2 @@
+# Local connection settings with the password (see db.env.example)
+db.env

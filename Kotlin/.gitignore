@@ -1,0 +1,12 @@
+# Gradle caches, build output, IDE settings and demo databases; see README.md.
+.gradle/
+build/
+.kotlin/
+.idea/
+*.iml
+out/
+local.properties
+*.db
+*.db-journal
+*.db-wal
+*.db-shm

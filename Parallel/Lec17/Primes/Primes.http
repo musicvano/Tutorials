@@ -1,0 +1,15 @@
+# Запити до API Primes (Rider / Visual Studio: HTTP Client).
+# Compose: 8080; kind (NodePort): 30080; Aspire (профіль http): 5043.
+@host = http://localhost:8080
+
+### Версія й ім'я контейнера
+GET {{host}}/
+
+### Подати завдання: [2, 20000000) у 40 частинах
+POST {{host}}/jobs?to=20000000&chunks=40
+
+### Стан завдання (id з відповіді на POST)
+GET {{host}}/jobs/00000000
+
+### Синхронне обчислення в самому API
+GET {{host}}/primes?to=1000000

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Adaptive/Adaptive.csproj" />
+  <Project Path="MatMul/MatMul.csproj" />
+</Solution>

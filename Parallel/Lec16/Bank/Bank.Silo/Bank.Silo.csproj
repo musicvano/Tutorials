@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.Server" Version="10.3.1" />
+    <PackageReference Include="Microsoft.Orleans.Persistence.Redis" Version="10.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bank.Grains\Bank.Grains.csproj" />
+  </ItemGroup>
+
+  <!-- Screenshot 16/06 only: the build property Otel=true compiles
+       ..\Staging\Program.Otel.cs (the lecture's Program.cs plus
+       AddActivityPropagation and the OpenTelemetry block) instead;
+       see Code\README.md for the command. -->
+  <ItemGroup Condition="'$(Otel)' == 'true'">
+    <Compile Remove="Program.cs" />
+    <Compile Include="..\Staging\Program.Otel.cs" Link="Program.Otel.cs" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.19.0" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.19.0" />
+  </ItemGroup>
+
+</Project>

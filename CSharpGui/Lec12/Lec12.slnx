@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="EventDemo/EventDemo.csproj" />
+  <Project Path="FileManager/FileManager.csproj" />
+  <Project Path="Registration/Registration.csproj" />
+  <Project Path="RegistrationFluent/RegistrationFluent.csproj" />
+  <Project Path="UnitConverter/UnitConverter.csproj" />
+</Solution>

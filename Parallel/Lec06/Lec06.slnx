@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Mandelbrot/Mandelbrot.csproj" />
+  <Project Path="MergeSort/MergeSort.csproj" />
+</Solution>

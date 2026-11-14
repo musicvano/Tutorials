@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="BmiCalculator/BmiCalculator.csproj" />
+  <Project Path="BookCatalog/BookCatalog.csproj" />
+  <Project Path="LayoutDemo/LayoutDemo.csproj" />
+  <Project Path="PhoneBook/PhoneBook.csproj" />
+  <Project Path="StopwatchApp/StopwatchApp.csproj" />
+  <Project Path="TemperatureConverter/TemperatureConverter.csproj" />
+  <Project Path="TextEditor/TextEditor.csproj" />
+</Solution>

@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Checksums/Checksums.csproj" />
+  <Project Path="FileSearch/FileSearch.csproj" />
+  <Project Path="Mandelbrot/Mandelbrot.csproj" />
+  <Project Path="Pages/Pages.csproj" />
+  <Project Path="Primes/Primes.csproj" />
+  <Project Path="Resize/Resize.csproj" />
+</Solution>

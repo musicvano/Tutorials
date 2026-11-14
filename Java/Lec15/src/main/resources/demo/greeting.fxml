@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" spacing="12"
+  fx:controller="demo.GreetingController">
+  <padding><Insets top="16" right="16"
+    bottom="16" left="16"/></padding>
+  <Label text="Ваше ім’я:"/>
+  <TextField fx:id="name" promptText="Ім’я"/>
+  <Button fx:id="greet" text="Привітати"
+    onAction="#greet" defaultButton="true"/>
+  <Label fx:id="status" wrapText="true"/>
+</VBox>

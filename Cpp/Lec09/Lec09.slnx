@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Fraction/Fraction.vcxproj" Id="11f1f54b-4296-491b-a948-252658fb511f" />
+  <Project Path="Money/Money.vcxproj" Id="29e63201-2852-4a10-aef1-bd9246d5b63c" />
+</Solution>

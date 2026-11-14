@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Geometry/Geometry.vcxproj" Id="efb77348-77c2-458d-a0eb-7f551cca2251" />
+  <Project Path="Hanoi/Hanoi.vcxproj" Id="2fea0c65-233c-424e-bbad-0d9361bb3451" />
+</Solution>

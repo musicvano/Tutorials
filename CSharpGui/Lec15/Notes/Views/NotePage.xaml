@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Notes.ViewModels"
+             x:Class="Notes.Views.NotePage"
+             x:DataType="vm:NoteViewModel"
+             Title="Note">
+    <Grid RowDefinitions="*,Auto" ColumnDefinitions="*,*"
+          Padding="16" RowSpacing="12" ColumnSpacing="12">
+        <Editor Grid.ColumnSpan="2" Text="{Binding Text}"
+                Placeholder="Enter your note" />
+        <Button Grid.Row="1" Text="Save"
+                Command="{Binding SaveCommand}" />
+        <Button Grid.Row="1" Grid.Column="1" Text="Delete"
+                Command="{Binding DeleteCommand}" />
+    </Grid>
+</ContentPage>

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Blog/Blog.csproj" />
+  <Project Path="Shop/Shop.csproj" />
+  <Project Path="States/States.csproj" />
+  <Project Path="Stock/Stock.csproj" />
+</Solution>

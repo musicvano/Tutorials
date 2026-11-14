@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BookBrowser/BookBrowser.csproj" />
+  <Project Path="Injection/Injection.csproj" />
+  <Project Path="Library/Library.csproj" />
+</Solution>

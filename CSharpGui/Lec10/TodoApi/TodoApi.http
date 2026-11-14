@@ -1,0 +1,37 @@
+@host = http://localhost:5080
+
+### Створити справу
+POST {{host}}/api/todos
+Content-Type: application/json
+
+{
+  "title": "Купити молоко",
+  "priority": "high",
+  "dueDate": "2026-09-20"
+}
+
+### Невиконані справи
+GET {{host}}/api/todos?done=false
+
+### Одна справа
+GET {{host}}/api/todos/1
+
+### Позначити справу виконаною
+PUT {{host}}/api/todos/1
+Content-Type: application/json
+
+{
+  "title": "Купити молоко",
+  "priority": "high",
+  "dueDate": "2026-09-20",
+  "isDone": true
+}
+
+### Видалити справу
+DELETE {{host}}/api/todos/1
+
+### Помилка валідації: назва коротша за 3 символи
+POST {{host}}/api/todos
+Content-Type: application/json
+
+{ "title": "Ок" }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowTitle"><string>Список справ</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item><widget class="QLineEdit" name="taskEdit"/></item>
+   <item><widget class="QPushButton" name="addButton">
+    <property name="text"><string>Додати</string></property>
+   </widget></item>
+   <item><widget class="QListWidget" name="taskList"/></item>
+   <item><widget class="QPushButton" name="removeButton">
+    <property name="text"><string>Видалити</string></property>
+   </widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

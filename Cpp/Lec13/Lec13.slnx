@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Contacts/Contacts.vcxproj" Id="4f24dd2f-6cbd-47c6-bf21-2f0e4e2a840a" />
+  <Project Path="Words/Words.vcxproj" Id="8337f501-ed7d-4c7f-b840-41e976b62bf0" />
+</Solution>

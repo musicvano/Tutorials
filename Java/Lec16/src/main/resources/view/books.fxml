@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="demo.controller.BookController" spacing="8">
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10"/>
+  </padding>
+  <TableView fx:id="bookTable" VBox.vgrow="ALWAYS">
+    <columns>
+      <TableColumn fx:id="idColumn" text="Id" prefWidth="60"/>
+      <TableColumn fx:id="titleColumn" text="Title" prefWidth="360"/>
+      <TableColumn fx:id="yearColumn" text="Year" prefWidth="80"/>
+    </columns>
+  </TableView>
+  <TextField fx:id="titleField" promptText="Title" onAction="#add"/>
+  <TextField fx:id="yearField" promptText="Year" text="2026"/>
+  <HBox spacing="8">
+    <Button fx:id="reloadButton" text="Reload" onAction="#reload"/>
+    <Button fx:id="addButton" text="Add" onAction="#add"/>
+    <Button fx:id="saveButton" text="Save selected" onAction="#save"/>
+    <Button fx:id="deleteButton" text="Delete selected"
+            onAction="#delete"/>
+  </HBox>
+  <Label fx:id="statusLabel" text="Ready"/>
+</VBox>

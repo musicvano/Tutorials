@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SystemInfo/SystemInfo.csproj" />
+  <Project Path="Amdahl/Amdahl.csproj" />
+  <Project Path="Timing/Timing.csproj" />
+  <Project Path="KarpFlatt/KarpFlatt.csproj" />
+</Solution>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhereAmI.MainPage"
+             Title="Where am I?">
+    <VerticalStackLayout Padding="24" Spacing="16"
+                         MaximumWidthRequest="500">
+        <Label x:Name="networkLabel" Text="Network: unchanged"
+               FontSize="14" />
+        <Label x:Name="coordinatesLabel" FontSize="24"
+               HorizontalOptions="Center" />
+        <Label x:Name="distanceLabel" FontSize="18"
+               HorizontalOptions="Center" />
+        <Button Text="Find my location" Clicked="OnLocateClicked" />
+        <Button x:Name="shareButton" Text="Share" IsEnabled="False"
+                Clicked="OnShareClicked" />
+        <ActivityIndicator x:Name="busyIndicator" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Clock/Clock.csproj" />
+  <Project Path="Editor/Editor.csproj" />
+  <Project Path="Gauge/Gauge.csproj" />
+  <Project Path="Graph/Graph.csproj" />
+</Solution>

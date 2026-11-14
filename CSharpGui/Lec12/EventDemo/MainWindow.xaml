@@ -1,0 +1,31 @@
+<Window x:Class="EventDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="window" Title="Routed Events" Width="600" Height="330">
+    <Grid Margin="8" ColumnDefinitions="220, *"
+          RowDefinitions="*, Auto">
+        <Border x:Name="border" BorderBrush="Black"
+                BorderThickness="1" Padding="16" Margin="0,0,8,0">
+            <StackPanel x:Name="panel" Background="WhiteSmoke"
+                        VerticalAlignment="Center">
+                <TextBlock Text="StackPanel" Margin="4"/>
+                <Button x:Name="button" Margin="12" Padding="8">
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse x:Name="icon" Width="16" Height="16"
+                                 Fill="Black" Margin="0,0,6,0"/>
+                        <TextBlock Text="Button"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+        <ListBox x:Name="logList" Grid.Column="1"
+                 FontFamily="Consolas"/>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="0,8,0,0">
+            <CheckBox x:Name="stopBox"
+                      Content="Handle PreviewMouseDown on panel"/>
+            <CheckBox x:Name="handledTooBox" Margin="0,4"
+                      Content="Handlers with handledEventsToo = true"
+                      Click="HandledTooBox_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

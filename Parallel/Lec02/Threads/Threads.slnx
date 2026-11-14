@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Workers/Workers.csproj" />
+  <Project Path="ArraySum/ArraySum.csproj" />
+  <Project Path="PoolJobs/PoolJobs.csproj" />
+  <Project Path="Affinity/Affinity.csproj" />
+  <Project Path="PoolDemo/PoolDemo.csproj" />
+</Solution>

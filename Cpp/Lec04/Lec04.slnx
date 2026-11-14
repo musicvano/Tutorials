@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Vector/Vector.vcxproj" Id="27198dfb-61e7-4d9b-afba-c4b33d152a1f" />
+  <Project Path="Bounds/Bounds.vcxproj" Id="057da89e-84ec-4766-a881-44cb29c8129a" />
+</Solution>

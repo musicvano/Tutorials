@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaterTracker.MainPage"
+             Title="Water Tracker">
+    <!-- Явний стиль кнопок: Style="{StaticResource AddButton}" -->
+    <ContentPage.Resources>
+        <Style x:Key="AddButton" TargetType="Button">
+            <Setter Property="WidthRequest" Value="110" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto" RowSpacing="20"
+          Padding="24" MaximumWidthRequest="500">
+        <Label x:Name="totalLabel" FontSize="32"
+               HorizontalOptions="Center" />
+        <ProgressBar x:Name="progressBar" Grid.Row="1"
+                     ProgressColor="{AppThemeBinding
+                         Light={StaticResource Primary},
+                         Dark=White}" />
+        <!-- Рядок 2: кнопки додавання води -->
+        <HorizontalStackLayout Grid.Row="2" Spacing="12"
+                               HorizontalOptions="Center">
+            <Button Text="+250 ml" Style="{StaticResource AddButton}"
+                    Clicked="OnAdd250Clicked" />
+            <Button Text="+500 ml" Style="{StaticResource AddButton}"
+                    Clicked="OnAdd500Clicked" />
+        </HorizontalStackLayout>
+        <Button Grid.Row="3" Text="Reset" Clicked="OnResetClicked" />
+    </Grid>
+</ContentPage>

@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LoanMain" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="demo.LoanMain" />
+    <module name="library" />
+    <option name="envFilePaths">
+      <option value="$PROJECT_DIR$/db.env" />
+    </option>
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

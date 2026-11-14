@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="BoardClient/BoardClient.csproj" />
+  <Project Path="BoardServer/BoardServer.csproj" />
+  <Project Path="ChatClient/ChatClient.csproj" />
+  <Project Path="ChatServer/ChatServer.csproj" />
+  <Project Path="RoomsClient/RoomsClient.csproj" />
+</Solution>

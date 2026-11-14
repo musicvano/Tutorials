@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Bank.Abstractions/Bank.Abstractions.csproj" />
+  <Project Path="Bank.Grains/Bank.Grains.csproj" />
+  <Project Path="Bank.Silo/Bank.Silo.csproj" />
+  <Project Path="Bank.Client/Bank.Client.csproj" />
+</Solution>

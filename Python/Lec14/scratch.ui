@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScratchForm</class>
+ <widget class="QWidget" name="ScratchForm">
+  <property name="windowTitle"><string>Чернетка</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item><widget class="QLabel" name="infoLabel">
+    <property name="text"><string>Пробна форма для з’єднань</string></property>
+   </widget></item>
+   <item><widget class="QPushButton" name="closeButton">
+    <property name="text"><string>Закрити</string></property>
+   </widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

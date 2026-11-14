@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Capabilities/Capabilities.csproj" />
+  <Project Path="MatMul/MatMul.csproj" />
+  <Project Path="SumBenchmarks/SumBenchmarks.csproj" />
+</Solution>

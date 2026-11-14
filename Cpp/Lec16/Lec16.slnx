@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="LinkError/LinkError.vcxproj" Id="657e9845-995e-4bcc-b19f-182e6c9a2a8b" />
+  <Project Path="Geometry/Geometry.vcxproj" Id="ee013a29-c63f-4c57-854e-9ba57bc38904" />
+  <Project Path="fees/fees.vcxproj" Id="a38dab91-ba6a-4e1e-a291-1d15a908b45c" />
+  <Project Path="App/App.vcxproj" Id="48599e9a-96a3-4a91-92e5-6edcc36d6b0e" />
+</Solution>

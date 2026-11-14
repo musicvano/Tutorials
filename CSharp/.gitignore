@@ -1,0 +1,21 @@
+# .NET build output and local Visual Studio state.
+# Only sources, project files and solutions belong in the repository; see README.md.
+
+# Build output of every project
+bin/
+obj/
+
+# Local IDE state: .suo, FileContentIndex, CopilotIndices
+.vs/
+
+# Per-user project settings
+*.user
+
+# Test and coverage artefacts of Lec18/Shop.Tests
+TestResults/
+*.coverage
+*.coveragexml
+*.trx
+
+# Runtime output of the Lec16 JSON example when it is run from the project folder
+/Lec16/FilesDemo/data/

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Hello/Hello.csproj" />
+  <Project Path="Logs/Logs.csproj" />
+  <Project Path="Orders/Orders.csproj" />
+  <Project Path="Reliable/Reliable.csproj" />
+</Solution>

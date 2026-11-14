@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Accounts/Accounts.vcxproj" Id="f54917f0-f76a-4df4-9b75-0f081abbf20b" />
+  <Project Path="Csv/Csv.vcxproj" Id="1084a21d-8482-42c8-b1fb-8d7eb44d54f2" />
+  <Project Path="Directory/Directory.vcxproj" Id="8757ab62-4640-4d41-877b-f8133e0c1aaa" />
+</Solution>

@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Average/Average.vcxproj" Id="01f18c8d-b603-488c-ba1d-39f237b0e459" />
+  <Project Path="Unhandled/Unhandled.vcxproj" Id="bd09ae62-428a-436d-9187-8e7a78e22bc1" />
+  <Project Path="TraceLoop/TraceLoop.vcxproj" Id="c891de84-6397-4fb4-8adc-068d79831ebf" />
+</Solution>

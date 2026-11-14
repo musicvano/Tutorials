@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AnimatedUi/AnimatedUi.csproj" />
+  <Project Path="BouncingBall/BouncingBall.csproj" />
+  <Project Path="Player/Player.csproj" />
+</Solution>

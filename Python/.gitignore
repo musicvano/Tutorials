@@ -1,0 +1,10 @@
+# Local virtual environment, caches and build output; see README.md.
+.venv/
+__pycache__/
+.idea/
+build/
+build-clean/
+dist/
+dist-clean/
+*.spec
+*.db

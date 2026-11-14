@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Drawable/Drawable.vcxproj" Id="e539953a-9491-4c5e-82b4-0d9155ae228c" />
+  <Project Path="Lamp/Lamp.vcxproj" Id="59e1105c-18b6-40c6-9379-29f2e5220a46" />
+  <Project Path="Diamond/Diamond.vcxproj" Id="30ccdea6-7058-4526-a84b-9d8fed78f620" />
+</Solution>

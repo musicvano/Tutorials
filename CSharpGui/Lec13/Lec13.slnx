@@ -1,0 +1,13 @@
+<Solution>
+  <Project Path="BookClient/BookClient.csproj" />
+  <Project Path="BookService/BookService.csproj" />
+  <Project Path="Cards/Cards.csproj" />
+  <Project Path="Catalog/Catalog.csproj" />
+  <Project Path="Profile/Profile.csproj" />
+  <Project Path="Registration/Registration.csproj" />
+  <Project Path="Schedule/Schedule.csproj" />
+  <Project Path="Styles/Styles.csproj" />
+  <Project Path="TodoApp.Core/TodoApp.Core.csproj" />
+  <Project Path="TodoApp.Tests/TodoApp.Tests.csproj" />
+  <Project Path="TodoApp/TodoApp.csproj" />
+</Solution>

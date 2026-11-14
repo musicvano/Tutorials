@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Memory/Memory.vcxproj" Id="4e62c559-facc-4347-89d8-51953182eb05" />
+  <Project Path="Playlist/Playlist.vcxproj" Id="1e91ddd0-d666-4db3-a535-abfdbc60cfe0" />
+  <Project Path="Leaks/Leaks.vcxproj" Id="6d860e59-cdb2-4467-9c42-9e399b8509eb" />
+  <Project Path="UseAfterFree/UseAfterFree.vcxproj" Id="4ef648e6-f94d-4b89-8bbd-a03dad77dedf" />
+</Solution>

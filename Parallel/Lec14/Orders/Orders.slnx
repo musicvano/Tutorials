@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Orders.Client/Orders.Client.csproj" />
+  <Project Path="Orders.Server/Orders.Server.csproj" />
+</Solution>

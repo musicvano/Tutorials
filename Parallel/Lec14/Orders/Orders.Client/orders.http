@@ -1,0 +1,7 @@
+### Замовлення № 2
+GRPC localhost:5001/orders.OrderService/GetOrder
+client-name: rider
+
+{
+  "id": 2
+}

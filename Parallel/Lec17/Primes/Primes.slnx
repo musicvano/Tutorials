@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Primes.Api/Primes.Api.csproj" />
+  <Project Path="Primes.Worker/Primes.Worker.csproj" />
+</Solution>

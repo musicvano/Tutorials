@@ -1,0 +1,29 @@
+<Window x:Class="Profile.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Profile"
+    Title="User Profile" Width="360" SizeToContent="Height">
+    <Window.Resources>
+        <local:AgeConverter x:Key="AgeConverter"/>
+    </Window.Resources>
+    <Window.DataContext>
+        <local:ProfileViewModel/>
+    </Window.DataContext>
+    <StackPanel Margin="10">
+        <TextBlock Text="{Binding Greeting}" FontWeight="Bold"
+                   FontSize="{Binding Value,
+                   ElementName=sizeSlider}"/>
+        <Label Content="_First name:" Target="{Binding
+               ElementName=firstNameBox}"/>
+        <TextBox x:Name="firstNameBox" Text="{Binding FirstName,
+                 UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="_Birth date:"/>
+        <DatePicker SelectedDate="{Binding BirthDate}"/>
+        <TextBlock Margin="0,4" Text="{Binding BirthDate,
+                   Converter={StaticResource AgeConverter},
+                   StringFormat=Age: {0},
+                   TargetNullValue=Age: unknown}"/>
+        <Slider x:Name="sizeSlider" Minimum="12" Maximum="24"
+                Value="16"/>
+    </StackPanel>
+</Window>

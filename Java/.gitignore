@@ -1,0 +1,15 @@
+# Build output, per-user IDE files and generated runtime images; see README.md.
+out/
+target/
+build/
+.gradle/
+*.class
+.idea/workspace.xml
+.idea/shelf/
+.idea/usage.statistics.xml
+.idea/dataSources*
+# jlink images of Lec13 (image, image2, ...)
+Lec13/image*/
+# Javadoc output of Lec05 (screenshot 05/08), the JAR of session 05/07
+Lec05/Temperatures/docs/
+Lec05/Library/library.jar

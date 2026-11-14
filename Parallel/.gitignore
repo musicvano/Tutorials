@@ -1,0 +1,31 @@
+# .NET build output and local IDE state.
+# Only sources, project files and solutions belong in the repository; see README.md.
+
+# Build output of every project
+bin/
+obj/
+
+# Local IDE state (Visual Studio, Rider)
+.vs/
+.idea/
+*.user
+
+# Wireshark captures saved while staging screenshots
+*.pcapng
+
+# aspire publish / deploy output (Lec17: out-compose, out-k8s)
+out-compose/
+out-k8s/
+
+# BenchmarkDotNet results (Lec07 SumBenchmarks: summary and *-asm.md)
+BenchmarkDotNet.Artifacts/
+
+# Program output written next to the project (Lec06: MergeSort speedup.csv, Mandelbrot mandelbrot.pgm)
+speedup.csv
+*.pgm
+
+# CMake builds (Lec11, Lec12: build/ from the command line or CLion's build folder) and Nsight Systems reports
+build/
+cmake-build-*/
+*.nsys-rep
+*.sqlite

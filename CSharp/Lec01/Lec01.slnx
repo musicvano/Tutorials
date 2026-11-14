@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Hello/Hello.csproj" />
+  <Project Path="Receipt/Receipt.csproj" />
+  <Project Path="Temperature/Temperature.csproj" />
+  <Project Path="Travel/Travel.csproj" />
+</Solution>

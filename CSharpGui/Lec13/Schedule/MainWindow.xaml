@@ -1,0 +1,57 @@
+<Window x:Class="Schedule.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Schedule"
+    Title="Schedule Editor" Width="520" Height="320">
+    <Window.DataContext>
+        <local:ScheduleViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="4,0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolTip" Value="{Binding
+                        RelativeSource={RelativeSource Self},
+                        Path=(Validation.Errors)[0].ErrorContent}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <DockPanel Margin="10">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal"
+                    Margin="0,0,0,8">
+            <ComboBox ItemsSource="{Binding Days}"
+                      SelectedItem="{Binding Day}" Width="100"/>
+            <TextBox Width="60" Text="{Binding Start,
+                     UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="150" Text="{Binding Subject,
+                     UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="50" Text="{Binding Room,
+                     UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Content="_Add" Padding="10,2"
+                    Command="{Binding AddCommand}" IsDefault="True"/>
+        </StackPanel>
+        <DockPanel DockPanel.Dock="Bottom" Margin="0,8,0,0">
+            <Button DockPanel.Dock="Right" Content="_Remove"
+                    Padding="10,2" Command="{Binding RemoveCommand}"/>
+            <TextBlock Text="{Binding Message}"
+                       VerticalAlignment="Center"/>
+        </DockPanel>
+        <DataGrid ItemsSource="{Binding Lessons}" IsReadOnly="True"
+                  AutoGenerateColumns="False"
+                  SelectedItem="{Binding SelectedLesson}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Day"
+                    Binding="{Binding Day}"/>
+                <DataGridTextColumn Header="Start"
+                    Binding="{Binding Start, StringFormat=HH:mm}"/>
+                <DataGridTextColumn Header="Subject" Width="*"
+                    Binding="{Binding Subject}"/>
+                <DataGridTextColumn Header="Room"
+                    Binding="{Binding Room}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AiAssistant/AiAssistant.csproj" />
+  <Project Path="Chat/Chat.csproj" />
+  <Project Path="Library/Library.csproj" />
+  <Project Path="Providers/Providers.csproj" />
+</Solution>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GalleryForm</class>
+ <widget class="QWidget" name="GalleryForm">
+  <property name="windowTitle"><string>Галерея віджетів</string></property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0"><widget class="QLabel" name="nameLabel">
+    <property name="text"><string>Ім’я</string></property>
+    <property name="buddy"><cstring>nameEdit</cstring></property>
+   </widget></item>
+   <item row="0" column="1"><widget class="QLineEdit" name="nameEdit">
+    <property name="text"><string>Олена Коваль</string></property>
+   </widget></item>
+   <item row="1" column="0"><widget class="QLabel" name="yearLabel">
+    <property name="text"><string>Курс</string></property>
+    <property name="buddy"><cstring>yearSpin</cstring></property>
+   </widget></item>
+   <item row="1" column="1"><widget class="QSpinBox" name="yearSpin">
+    <property name="minimum"><number>1</number></property>
+    <property name="maximum"><number>6</number></property>
+    <property name="value"><number>2</number></property>
+   </widget></item>
+   <item row="2" column="0"><widget class="QLabel" name="scoreLabel">
+    <property name="text"><string>Середній бал</string></property>
+    <property name="buddy"><cstring>scoreSpin</cstring></property>
+   </widget></item>
+   <item row="2" column="1"><widget class="QDoubleSpinBox" name="scoreSpin">
+    <property name="decimals"><number>1</number></property>
+    <property name="maximum"><double>100.0</double></property>
+    <property name="singleStep"><double>0.5</double></property>
+    <property name="value"><double>87.5</double></property>
+   </widget></item>
+   <item row="3" column="0"><widget class="QLabel" name="dormLabel">
+    <property name="text"><string>Гуртожиток</string></property>
+   </widget></item>
+   <item row="3" column="1"><widget class="QCheckBox" name="dormCheck">
+    <property name="text"><string>Потрібне місце</string></property>
+    <property name="checked"><bool>true</bool></property>
+   </widget></item>
+   <item row="4" column="0"><widget class="QLabel" name="modeLabel">
+    <property name="text"><string>Форма навчання</string></property>
+   </widget></item>
+   <item row="4" column="1"><layout class="QHBoxLayout" name="modeLayout">
+    <item><widget class="QRadioButton" name="dayRadio">
+     <property name="text"><string>Денна</string></property>
+     <property name="checked"><bool>true</bool></property>
+     <attribute name="buttonGroup"><string notr="true">modeGroup</string></attribute>
+    </widget></item>
+    <item><widget class="QRadioButton" name="extramuralRadio">
+     <property name="text"><string>Заочна</string></property>
+     <attribute name="buttonGroup"><string notr="true">modeGroup</string></attribute>
+    </widget></item>
+    <item><spacer name="modeSpacer">
+     <property name="orientation"><enum>Qt::Orientation::Horizontal</enum></property>
+    </spacer></item>
+   </layout></item>
+   <item row="5" column="0"><widget class="QLabel" name="languageLabel">
+    <property name="text"><string>Мова</string></property>
+    <property name="buddy"><cstring>languageCombo</cstring></property>
+   </widget></item>
+   <item row="5" column="1"><widget class="QComboBox" name="languageCombo">
+    <item><property name="text"><string>Українська</string></property></item>
+    <item><property name="text"><string>English</string></property></item>
+   </widget></item>
+   <item row="6" column="0"><widget class="QLabel" name="doneLabel">
+    <property name="text"><string>Виконано, %</string></property>
+    <property name="buddy"><cstring>doneSlider</cstring></property>
+   </widget></item>
+   <item row="6" column="1"><widget class="QSlider" name="doneSlider">
+    <property name="maximum"><number>100</number></property>
+    <property name="value"><number>60</number></property>
+    <property name="orientation"><enum>Qt::Orientation::Horizontal</enum></property>
+   </widget></item>
+   <item row="7" column="0"><widget class="QLabel" name="progressLabel">
+    <property name="text"><string>Прогрес</string></property>
+   </widget></item>
+   <item row="7" column="1"><widget class="QProgressBar" name="progressBar">
+    <property name="value"><number>60</number></property>
+   </widget></item>
+   <item row="8" column="0"><widget class="QLabel" name="dateLabel">
+    <property name="text"><string>Дата вступу</string></property>
+    <property name="buddy"><cstring>dateEdit</cstring></property>
+   </widget></item>
+   <item row="8" column="1"><widget class="QDateEdit" name="dateEdit">
+    <property name="date"><date><year>2025</year><month>9</month><day>1</day></date></property>
+    <property name="displayFormat"><string>dd.MM.yyyy</string></property>
+    <property name="calendarPopup"><bool>true</bool></property>
+   </widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>doneSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>progressBar</receiver>
+   <slot>setValue(int)</slot>
+  </connection>
+ </connections>
+ <buttongroups>
+  <buttongroup name="modeGroup"/>
+ </buttongroups>
+</ui>
