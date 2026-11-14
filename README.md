@@ -2,15 +2,15 @@
 
 Code examples for the university courses by Ivan Muzyka. The lectures, labs and slides are on [mvano.com](https://mvano.com/); this repository holds the programs they discuss, so you can open, run, debug and change them yourself.
 
-| Folder                   | Course                                | Course page                                                                     |
-| ------------------------ | ------------------------------------- | ------------------------------------------------------------------------------- |
-| [`Cpp`](Cpp)             | Object-oriented programming in C++    | [mvano.com/courses/cpp](https://mvano.com/courses/cpp/)                         |
-| [`CSharp`](CSharp)       | Object-oriented programming in C# I   | [mvano.com/courses/csharp](https://mvano.com/courses/csharp/)                   |
-| [`CSharpGui`](CSharpGui) | Object-oriented programming in C# II  | [mvano.com/courses/csharp-advanced](https://mvano.com/courses/csharp-advanced/) |
-| [`Java`](Java)           | Object-oriented programming in Java   | [mvano.com/courses/java](https://mvano.com/courses/java/)                       |
-| [`Kotlin`](Kotlin)       | Object-oriented programming in Kotlin | [mvano.com/courses/kotlin](https://mvano.com/courses/kotlin/)                   |
-| [`Parallel`](Parallel)   | Parallel and distributed computing    | [mvano.com/courses/parallel](https://mvano.com/courses/parallel/)               |
-| [`Python`](Python)       | Object-oriented programming in Python | [mvano.com/courses/python](https://mvano.com/courses/python/)                   |
+| Folder                   | Course                                  | Course page                                                           |
+| ------------------------ | --------------------------------------- | --------------------------------------------------------------------- |
+| [`Cpp`](Cpp)             | Object-oriented programming in C++      | [mvano.com/courses/cpp](https://mvano.com/courses/cpp/)               |
+| [`CSharp`](CSharp)       | Object-oriented programming in C#       | [mvano.com/courses/csharp](https://mvano.com/courses/csharp/)         |
+| [`CSharpGui`](CSharpGui) | Object-oriented programming in C# (GUI) | [mvano.com/courses/csharp-gui](https://mvano.com/courses/csharp-gui/) |
+| [`Java`](Java)           | Object-oriented programming in Java     | [mvano.com/courses/java](https://mvano.com/courses/java/)             |
+| [`Kotlin`](Kotlin)       | Object-oriented programming in Kotlin   | [mvano.com/courses/kotlin](https://mvano.com/courses/kotlin/)         |
+| [`Parallel`](Parallel)   | Parallel and distributed computing      | [mvano.com/courses/parallel](https://mvano.com/courses/parallel/)     |
+| [`Python`](Python)       | Object-oriented programming in Python   | [mvano.com/courses/python](https://mvano.com/courses/python/)         |
 
 Inside a course folder, `LecNN` holds the examples of topic NN of the course program (`Lec05` belongs to topic 5). A topic without examples has no folder. Each course folder has its own `README.md` with the tools it needs and how to build and run the programs.
 

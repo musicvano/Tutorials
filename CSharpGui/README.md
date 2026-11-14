@@ -1,6 +1,6 @@
-# Object-oriented programming in C# II
+# Object-oriented programming in C# (GUI)
 
-Code examples for the course [Object-oriented programming in C# II](https://mvano.com/courses/csharp-advanced/):
+Code examples for the course [Object-oriented programming in C# (GUI)](https://mvano.com/courses/csharp-gui/):
 desktop, web, network, database and AI applications in .NET. Each `LecNN` folder belongs to topic
 NN of the course. Topic 1 (Git) has no code folder: its lecture builds the demo repositories step by
 step.

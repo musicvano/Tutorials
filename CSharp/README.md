@@ -1,6 +1,6 @@
-# Object-oriented programming in C# I
+# Object-oriented programming in C#
 
-Code examples for the course [Object-oriented programming in C# I](https://mvano.com/courses/csharp/).
+Code examples for the course [Object-oriented programming in C#](https://mvano.com/courses/csharp/).
 Each `LecNN` folder belongs to topic NN of the course.
 
 ## Tools
