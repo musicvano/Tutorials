@@ -13,18 +13,18 @@ obj/
 # Wireshark captures saved while staging screenshots
 *.pcapng
 
-# aspire publish / deploy output (Lec17: out-compose, out-k8s)
+# aspire publish / deploy output (Containers: out-compose, out-k8s)
 out-compose/
 out-k8s/
 
-# BenchmarkDotNet results (Lec07 SumBenchmarks: summary and *-asm.md)
+# BenchmarkDotNet results (Simd SumBenchmarks: summary and *-asm.md)
 BenchmarkDotNet.Artifacts/
 
-# Program output written next to the project (Lec06: MergeSort speedup.csv, Mandelbrot mandelbrot.pgm)
+# Program output written next to the project (DataParallelism: MergeSort speedup.csv, Mandelbrot mandelbrot.pgm)
 speedup.csv
 *.pgm
 
-# CMake builds (Lec11, Lec12: build/ from the command line or CLion's build folder) and Nsight Systems reports
+# CMake builds (Gpu, Mpi: build/ from the command line or CLion's build folder) and Nsight Systems reports
 build/
 cmake-build-*/
 *.nsys-rep

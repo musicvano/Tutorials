@@ -8,8 +8,8 @@ build/
 .idea/shelf/
 .idea/usage.statistics.xml
 .idea/dataSources*
-# jlink images of Lec13 (image, image2, ...)
-Lec13/image*/
-# Javadoc output of Lec05 (screenshot 05/08), the JAR of session 05/07
-Lec05/Temperatures/docs/
-Lec05/Library/library.jar
+# jlink images of the Modules topic (image, image2, ...)
+Modules/image*/
+# Javadoc output of the Classes topic (screenshot 05/08), the JAR of session 05/07
+Classes/Temperatures/docs/
+Classes/Library/library.jar

@@ -11,11 +11,11 @@ obj/
 # Per-user project settings
 *.user
 
-# Test and coverage artefacts of Lec18/Shop.Tests
+# Test and coverage artefacts of Testing/Shop.Tests
 TestResults/
 *.coverage
 *.coveragexml
 *.trx
 
-# Runtime output of the Lec16 JSON example when it is run from the project folder
-/Lec16/FilesDemo/data/
+# Runtime output of the Files JSON example when it is run from the project folder
+/Files/FilesDemo/data/

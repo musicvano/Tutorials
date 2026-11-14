@@ -1,20 +1,20 @@
 # Visual Studio C++ build output and local IDE state.
 # Only sources, project files and solutions belong in the repository; see README.md.
 
-# Solution build output: LecNN/x64/<Configuration>/<Project>/ (OutDir)
+# Solution build output: <Topic>/x64/<Configuration>/<Project>/ (OutDir)
 x64/
 
-# Per-project intermediate files: LecNN/<Project>/obj/ (IntDir)
+# Per-project intermediate files: <Topic>/<Project>/obj/ (IntDir)
 obj/
 
-# CMake "Open Folder" output of Lec16/Score
+# CMake "Open Folder" output of Modules/Score
 out/
 
 # Local IDE state: .ipch, Browse.VC.db, .suo, CopilotIndices
 .vs/
 
 # Per-user project settings. Anything a reader needs — such as the debugger working
-# directory of the Lec15 examples — is set in the .vcxproj instead.
+# directory of the Files examples — is set in the .vcxproj instead.
 *.vcxproj.user
 *.vcxproj.filters
 
@@ -28,9 +28,9 @@ out/
 *.lib
 *.ifc
 
-# Demo data of the Lec15 file examples: every program recreates its own input
+# Demo data of the Files examples: every program recreates its own input
 # on each run (lecture 15), so none of these is a checked-in fixture.
-/Lec15/grades-demo.csv
-/Lec15/grades-report.txt
-/Lec15/accounts-demo.dat
-/Lec15/directory-demo/
+/Files/grades-demo.csv
+/Files/grades-report.txt
+/Files/accounts-demo.dat
+/Files/directory-demo/

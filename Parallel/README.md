@@ -1,11 +1,12 @@
 # Parallel and distributed computing
 
 Code examples for the course [Parallel and distributed computing](https://mvano.com/courses/parallel/).
-Each `LecNN` folder belongs to topic NN of the course; topic 13 has no code folder.
+Each topic of the course has its own folder named after the topic; the table below lists them in
+course order and links each topic page. Topic 13 has no code folder.
 
 ## Tools
 
-- .NET 10 SDK and JetBrains Rider (or Visual Studio 2026) for the C# topics. Open `LecNN\LecNN.slnx`
+- .NET 10 SDK and JetBrains Rider (or Visual Studio 2026) for the C# topics. Open `<Topic>\<Topic>.slnx`
   or a project folder, or use `dotnet run -c Release` (benchmarks and speedup measurements are only
   meaningful in Release).
 - Topics 9–10: a C++23 compiler with OpenMP, CMake 3.28+ and Ninja; each project has `CMakePresets.json`
@@ -18,29 +19,29 @@ Each `LecNN` folder belongs to topic NN of the course; topic 13 has no code fold
 
 ## Topics
 
-| Folder            | Topic                                                                                   | Projects                                                     |
-| ----------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [`Lec01`](Lec01)  | Fundamentals of parallel computing, Amdahl's and Gustafson's laws; .NET 10 and Rider    | `Speedup`                                                    |
-| [`Lec02`](Lec02)  | Processes and threads: scheduling, priorities, affinity; threads and the thread pool    | `Threads`                                                    |
-| [`Lec03`](Lec03)  | Race conditions, deadlocks, starvation; thread synchronization in C#                    | `Sync`                                                       |
-| [`Lec04`](Lec04)  | Thread-safe collections, channels, producer–consumer; false sharing                     | `PipelineDemo`, `FalseSharing`, `FalseSharingBench`          |
-| [`Lec05`](Lec05)  | Task parallelism (TPL), cancellation, exceptions; async/await                           | `Downloads`, `HashCancel`, `StateMachine`, `Statistics`      |
-| [`Lec06`](Lec06)  | Data parallelism: parallel loops, PLINQ, partitioning; parallel sorting and reduction   | `Mandelbrot`, `MergeSort`                                    |
-| [`Lec07`](Lec07)  | SIMD vectorization in .NET, parallel linear algebra                                     | `Capabilities`, `SumBenchmarks`, `MatMul`                    |
-| [`Lec08`](Lec08)  | Models and levels of parallelism; parallel algorithms for vectors, matrices, numerics   | `Adaptive`, `MatMul`                                         |
-| [`Lec09`](Lec09)  | Multithreading in C++ and the parallel algorithms of the standard library               | `parallel_sum`, `pool`, `bank`, `parallel_stl` (CMake)       |
-| [`Lec10`](Lec10)  | OpenMP: parallel regions and loops, reductions, tasks; affinity and NUMA                | `hello`, `pi`, `mandel`, `quicksort` (CMake)                 |
-| [`Lec11`](Lec11)  | GPU computing: CUDA C++ and ILGPU for C#                                                | `VectorAdd`, `GpuExamples` (CUDA, CMake), `IlgpuDemo` (C#)   |
-| [`Lec12`](Lec12)  | MPI: point-to-point and collective operations, hybrid MPI + OpenMP                      | `MpiExamples` (CMake; `scale.sh`, `jscale.sh`, `hybrid.sh` run the measurement series) |
-| [`Lec14`](Lec14)  | Network sockets and remote procedure calls (CoreWCF, gRPC)                              | `Echo`, `Frames` (length-prefixed JSON frames), `Orders` (gRPC) |
-| [`Lec15`](Lec15)  | Messaging with RabbitMQ: work queues, publish–subscribe, delivery guarantees            | `Hello`, `Logs`, `Orders`, `Reliable`; `compose.yaml` starts RabbitMQ |
-| [`Lec16`](Lec16)  | The actor model and Microsoft Orleans; CAP and fault tolerance                          | `Bank`, `Sensors`                                            |
-| [`Lec17`](Lec17)  | Containers and orchestration: Docker, Kubernetes, .NET Aspire                           | `Primes` (Docker Compose, kind: `kind-setup.ps1`, `submit-job.ps1`), `Primes.Aspire` |
-| [`Lec18`](Lec18)  | Microservices: API gateway, Saga, Outbox, observability                                 | `Shop` (`orders.ps1` sends three test orders through the gateway) |
+| #                                                                  | Folder                                           | Topic                                                                                 | Projects                                                                               |
+| ------------------------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [1](https://mvano.com/courses/parallel/01-intro/)                  | [`Intro`](Intro)                                 | Fundamentals of parallel computing, Amdahl's and Gustafson's laws; .NET 10 and Rider  | `Speedup`                                                                              |
+| [2](https://mvano.com/courses/parallel/02-processes-threads/)      | [`Threads`](Threads)                             | Processes and threads: scheduling, priorities, affinity; threads and the thread pool  | `Threads`                                                                              |
+| [3](https://mvano.com/courses/parallel/03-synchronization/)        | [`Synchronization`](Synchronization)             | Race conditions, deadlocks, starvation; thread synchronization in C#                  | `Sync`                                                                                 |
+| [4](https://mvano.com/courses/parallel/04-concurrent-collections/) | [`ConcurrentCollections`](ConcurrentCollections) | Thread-safe collections, channels, producer–consumer; false sharing                   | `PipelineDemo`, `FalseSharing`, `FalseSharingBench`                                    |
+| [5](https://mvano.com/courses/parallel/05-tpl/)                    | [`Tpl`](Tpl)                                     | Task parallelism (TPL), cancellation, exceptions; async/await                         | `Downloads`, `HashCancel`, `StateMachine`, `Statistics`                                |
+| [6](https://mvano.com/courses/parallel/06-data-parallelism/)       | [`DataParallelism`](DataParallelism)             | Data parallelism: parallel loops, PLINQ, partitioning; parallel sorting and reduction | `Mandelbrot`, `MergeSort`                                                              |
+| [7](https://mvano.com/courses/parallel/07-simd/)                   | [`Simd`](Simd)                                   | SIMD vectorization in .NET, parallel linear algebra                                   | `Capabilities`, `SumBenchmarks`, `MatMul`                                              |
+| [8](https://mvano.com/courses/parallel/08-parallel-algorithms/)    | [`Algorithms`](Algorithms)                       | Models and levels of parallelism; parallel algorithms for vectors, matrices, numerics | `Adaptive`, `MatMul`                                                                   |
+| [9](https://mvano.com/courses/parallel/09-cpp-threads/)            | [`CppThreads`](CppThreads)                       | Multithreading in C++ and the parallel algorithms of the standard library             | `parallel_sum`, `pool`, `bank`, `parallel_stl` (CMake)                                 |
+| [10](https://mvano.com/courses/parallel/10-openmp/)                | [`OpenMp`](OpenMp)                               | OpenMP: parallel regions and loops, reductions, tasks; affinity and NUMA              | `hello`, `pi`, `mandel`, `quicksort` (CMake)                                           |
+| [11](https://mvano.com/courses/parallel/11-gpu/)                   | [`Gpu`](Gpu)                                     | GPU computing: CUDA C++ and ILGPU for C#                                              | `VectorAdd`, `GpuExamples` (CUDA, CMake), `IlgpuDemo` (C#)                             |
+| [12](https://mvano.com/courses/parallel/12-mpi/)                   | [`Mpi`](Mpi)                                     | MPI: point-to-point and collective operations, hybrid MPI + OpenMP                    | `MpiExamples` (CMake; `scale.sh`, `jscale.sh`, `hybrid.sh` run the measurement series) |
+| [14](https://mvano.com/courses/parallel/14-sockets-rpc/)           | [`Rpc`](Rpc)                                     | Network sockets and remote procedure calls (CoreWCF, gRPC)                            | `Echo`, `Frames` (length-prefixed JSON frames), `Orders` (gRPC)                        |
+| [15](https://mvano.com/courses/parallel/15-rabbitmq/)              | [`RabbitMq`](RabbitMq)                           | Messaging with RabbitMQ: work queues, publish–subscribe, delivery guarantees          | `Hello`, `Logs`, `Orders`, `Reliable`; `compose.yaml` starts RabbitMQ                  |
+| [16](https://mvano.com/courses/parallel/16-orleans/)               | [`Orleans`](Orleans)                             | The actor model and Microsoft Orleans; CAP and fault tolerance                        | `Bank`, `Sensors`                                                                      |
+| [17](https://mvano.com/courses/parallel/17-containers/)            | [`Containers`](Containers)                       | Containers and orchestration: Docker, Kubernetes, .NET Aspire                         | `Primes` (Docker Compose, kind: `kind-setup.ps1`, `submit-job.ps1`), `Primes.Aspire`   |
+| [18](https://mvano.com/courses/parallel/18-microservices/)         | [`Microservices`](Microservices)                 | Microservices: API gateway, Saga, Outbox, observability                               | `Shop` (`orders.ps1` sends three test orders through the gateway)                      |
 
 ## Notes
 
-- `Lec14\Frames` and the gRPC server `Lec14\Orders` both use port 5001: do not run them at the same time.
-- `Lec14\Frames`: `dotnet run -c Release` runs the server and the client in one process; pass
+- `Rpc\Frames` and the gRPC server `Rpc\Orders` both use port 5001: do not run them at the same time.
+- `Rpc\Frames`: `dotnet run -c Release` runs the server and the client in one process; pass
   `server` or `client` to run them in two terminals.
 - Build output (`bin`, `obj`, `build`), IDE state and captures are ignored by `.gitignore`.

@@ -12,7 +12,7 @@ Code examples for the university courses by Ivan Muzyka. The lectures, labs and 
 | [`Parallel`](Parallel)   | Parallel and distributed computing      | [mvano.com/courses/parallel](https://mvano.com/courses/parallel/)     |
 | [`Python`](Python)       | Object-oriented programming in Python   | [mvano.com/courses/python](https://mvano.com/courses/python/)         |
 
-Inside a course folder, `LecNN` holds the examples of topic NN of the course program (`Lec05` belongs to topic 5). A topic without examples has no folder. Each course folder has its own `README.md` with the tools it needs and how to build and run the programs.
+Inside a course folder, each topic of the course has its own folder named after the topic (`CSharp/Intro`, `Cpp/Functions`); the course `README.md` lists them in course order and links each topic page. A topic without examples has no folder. Each course folder has its own `README.md` with the tools it needs and how to build and run the programs.
 
 ## Getting the code
 
@@ -32,7 +32,7 @@ git sparse-checkout set CSharp
 
 Without Git, download the [ZIP archive](https://github.com/musicvano/Tutorials/archive/refs/heads/main.zip) of the whole repository.
 
-To keep your own changes apart from the originals, copy a `LecNN` folder (or the project you need) somewhere else, or work on a branch of your clone: `git pull` then brings in updates without conflicts.
+To keep your own changes apart from the originals, copy a topic folder (or the project you need) somewhere else, or work on a branch of your clone: `git pull` then brings in updates without conflicts.
 
 ## Tools
 
